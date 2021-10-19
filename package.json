@@ -1,0 +1,13 @@
+{
+  "name": "ReactLabTask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Denys <denissosnowsky@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.43.2"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
