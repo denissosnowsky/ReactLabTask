@@ -1,0 +1,111 @@
+.background-image
+    flex: 1
+    height: 100vh
+    background: center / contain no-repeat url("../images/bg.png"),
+
+.signing-block
+    width: 560px
+    height: 100vh
+    display: flex
+    flex-direction: column
+    padding-left: 96px
+    padding-right: 96px
+    background: $background-color
+
+.background-image
+    flex: 1
+
+.signing-main
+    display: flex
+
+h1
+    font-size: 24px
+    font-weight: 600
+    color: $header-color
+    height: 32px
+    line-height: 32px
+
+.form
+    padding-top: 40px
+    display: flex
+    flex-direction: column
+    gap: 40px
+    width: 100%
+    height: fit-content
+    &__input
+        &-wrapper
+            border: 1px solid #DCE0EC
+            height: 56px
+            width: 100%
+            border-radius: 8px
+            background: #FFFFFF
+            display: flex
+            flex-direction: row
+            padding-top: 16px
+            padding-bottom: 16px
+        &-first-icon
+            width: 64px
+            display: flex
+            align-items: center
+            position: relative
+            img
+                position: relative
+                left: 56.25%
+                transform: translateX(-50%)
+        &-text
+            flex: 1
+            input
+                border: none
+                outline: none
+                font-size: 14px
+                font-weight: 400
+                line-height: 24px
+                &::-moz-placeholder
+                    color: $gray-color
+                &::-webkit-input-placeholder
+                    color: $gray-color
+        &-last-icon
+            width: 64px
+            display: flex
+            align-items: center
+            position: relative
+            img
+                position: relative
+                left: 43.75%
+                transform: translateX(-50%)
+
+.form__button
+    background: $primary-color
+    border-radius: 8px
+    width: fit-content
+    min-width: 146px
+    height: 56px
+    padding: 16px 24px
+    text-align: left
+    color: #fff
+    font-size: 16px
+    font-weight: 600
+    border: 0
+    margin-top: 24px
+    display: flex
+    align-items: center
+    gap: 16.17px
+    &-icon
+        height: 100%
+        display: flex
+        align-items: center
+
+.link-block
+    &__question
+        height: 24px
+        line-height: 24px
+        font-size: 15px
+        font-weight: 400
+        color: $gray-color
+        padding-right: 12px
+    &__offer
+        height: 24px
+        line-height: 24px
+        font-size: 15px
+        font-weight: 600
+        color: $primary-color
