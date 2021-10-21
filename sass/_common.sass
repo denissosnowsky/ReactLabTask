@@ -1,7 +1,11 @@
+.signing-main
+    display: flex
+    height: fit-content
+
 .background-image
     flex: 1
     height: 100vh
-    background: center / cover no-repeat url("../images/bg.png"),
+    background: center / cover no-repeat url("../images/bg.png")
 
 .signing-block
     width: 560px
@@ -11,12 +15,6 @@
     padding-left: 96px
     padding-right: 96px
     background: $background-color
-
-.background-image
-    flex: 1
-
-.signing-main
-    display: flex
 
 h1
     font-size: 24px
@@ -53,18 +51,20 @@ h1
             padding-bottom: 16px
             position: relative
             &_errored
-               border: $error-border
-               &::after
-                   content: 'Password contain unsupported characters'
-                   color: $errorText-color 
-                   position: absolute
-                   height: 16px
-                   line-height: 16px
-                   font-size: 13px
-                   font-weight: 400
-                   width: 100%
-                   bottom: -8px - 16px
-                   left: 0px
+                border: $error-border
+                &::after
+                    content: 'Password contain unsupported characters'
+                    color: $errorText-color
+                    position: absolute
+                    height: 16px
+                    line-height: 16px
+                    font-size: 13px
+                    font-weight: 400
+                    width: 100%
+                    bottom: -8px - 16px
+                    left: 0px
+            &_focused
+                border: $focus-border
         &-first-icon
             width: 64px
             display: flex
@@ -76,12 +76,16 @@ h1
                 transform: translateX(-50%)
         &-text
             flex: 1
+            display: flex
+            align-items: center
             input
                 border: none
                 outline: none
                 font-size: 17px
                 font-weight: 400
-                line-height: 24px
+                line-height: 22px
+                height: 100%
+                width: 100%
                 &::-moz-placeholder
                     color: $gray-color
                 &::-webkit-input-placeholder
@@ -139,3 +143,59 @@ h1
 
 .email-link
     color: $primary-color
+
+@media (max-width: 768px)
+    .background-image
+        background: left / cover no-repeat url("../images/bgTab.png")
+
+@media (max-width: 576px)
+    .background-image
+        background: top / contain no-repeat url("../images/bg.png")
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 100%
+        z-index: -1
+    .signing-block
+        flex: 1
+        margin-top: 72px
+        width: 100%
+        height: fit-content
+        padding-left: 32px
+        padding-right: 32px
+        background-color: $background-color
+        z-index: 1
+        border-radius: 24px 24px 0px 0px
+        padding-top: 32px
+    .empty-block
+        display: none
+        &:nth-of-type(2)
+            flex: 1!important
+            display: block
+            min-height: 72px
+        &:last-of-type
+            height: 44px!important
+            display: block
+
+    .form
+        gap: 24px
+        padding-top: 24px
+        &__button
+            margin-top: 8px
+            height: 48px
+        &__input
+            &-wrapper
+                height: 40px
+                padding-top: 9.5px
+                padding-bottom: 9.5px
+            &-first-icon
+                width: 48px
+            &-last-icon
+                width: 48px
+            &-text
+                input
+                    font-size: 15px
+                    line-height: 19px
+    .link-block
+        display: flex
+        flex-direction: column
