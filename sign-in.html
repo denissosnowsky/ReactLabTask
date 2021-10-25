@@ -16,8 +16,7 @@
   <body>
     <main class="signing-main">
       <section class="background-image"></section>
-      <section class="signing-block">
-        <div class="empty-block" style="flex: 0.5067; min-height: 80px"></div>
+      <section class="signing-block signing-block-sign-in">
         <h1>Sign In</h1>
         <form class="form">
           <div class="form__input-wrapper">
@@ -25,7 +24,7 @@
               <img alt="email" src="./icons/message.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Email" />
+              <input placeholder="Email" type="email" />
             </div>
             <div class="form__input-last-icon"></div>
           </div>
@@ -34,7 +33,7 @@
               <img alt="password" src="./icons/lock.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Password" />
+              <input placeholder="Password" type="password" />
             </div>
             <div class="form__input-last-icon">
               <img alt="eye" src="./icons/eye.svg" />
@@ -42,18 +41,20 @@
           </div>
           <button class="form__button">
             <span>Sign In</span>
-            <span class="form__button-icon"><img alt="button" src="./icons/arrow-right.svg" /></span>
+            <span class="form__button-icon"
+              ><img alt="button" src="./icons/arrow-right.svg"
+            /></span>
           </button>
         </form>
         <div class="link-block forgotPassword-link">
           <u class="link-block__offer">Forgot Password?</u>
         </div>
-        <div class="empty-block empty-block-second" style="flex: 0.4933"></div>
-        <div class="link-block">
-          <span class="link-block__question">Don’t have an account?</span
-          ><u class="link-block__offer">Sign up</u>
-        </div>
-        <div class="empty-block" style="height: 80px"></div>
+        <footer class="footer-sign-in">
+          <div class="link-block">
+            <span class="link-block__question">Don’t have an account?</span
+            ><u class="link-block__offer">Sign up</u>
+          </div>
+        </footer>
       </section>
     </main>
   </body>

@@ -16,8 +16,7 @@
   <body>
     <main class="signing-main">
       <section class="background-image"></section>
-      <section class="signing-block">
-        <div class="empty-block" style="flex: 0.5833; min-height: 80px"></div>
+      <section class="signing-block signing-block-sign-up">
         <h1>Sign Up</h1>
         <form class="form">
           <div class="form__input-wrapper">
@@ -25,7 +24,7 @@
               <img alt="name" src="./icons/person.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="First Name" />
+              <input placeholder="First Name" type="text" />
             </div>
             <div class="form__input-last-icon"></div>
           </div>
@@ -34,7 +33,7 @@
               <img alt="lastname" src="./icons/person.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Last Name" />
+              <input placeholder="Last Name" type="text" />
             </div>
             <div class="form__input-last-icon"></div>
           </div>
@@ -43,7 +42,7 @@
               <img alt="email" src="./icons/message.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Email" />
+              <input placeholder="Email" type="email" />
             </div>
             <div class="form__input-last-icon"></div>
           </div>
@@ -52,7 +51,7 @@
               <img alt="password" src="./icons/lock.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Password" />
+              <input placeholder="Password" type="password" />
             </div>
             <div class="form__input-last-icon">
               <img alt="eye" src="./icons/eye.svg" />
@@ -63,7 +62,7 @@
               <img alt="confirm" src="./icons/check.svg" />
             </div>
             <div class="form__input-text">
-              <input placeholder="Confirm Password" />
+              <input placeholder="Confirm Password" type="password" />
             </div>
             <div class="form__input-last-icon">
               <img alt="eye" src="./icons/eye.svg" />
@@ -71,15 +70,17 @@
           </div>
           <button class="form__button">
             <span>Sign Up</span>
-            <span class="form__button-icon"><img alt="button" src="./icons/arrow-right.svg" /></span>
+            <span class="form__button-icon"
+              ><img alt="button" src="./icons/arrow-right.svg"
+            /></span>
           </button>
         </form>
-        <div class="empty-block empty-block-second" style="flex: 0.4167"></div>
-        <div class="link-block">
-          <span class="link-block__question">Already have an account?</span
-          ><u class="link-block__offer">Sign in</u>
-        </div>
-        <div class="empty-block" style="height: 80px"></div>
+        <footer class="footer-sign-up">
+          <div class="link-block">
+            <span class="link-block__question">Already have an account?</span
+            ><u class="link-block__offer">Sign in</u>
+          </div>
+        </footer>
       </section>
     </main>
   </body>
