@@ -1,6 +1,7 @@
 .signing-main
     display: flex
     height: 100vh
+    background-color: $background-color
 
 .background-image
     flex: 1
@@ -14,8 +15,6 @@
     flex-direction: column
     padding-left: 96px
     padding-right: 96px
-    background: $background-color
-    position: relative
     left: 0px
 
 h1
@@ -148,13 +147,13 @@ h1
         background: left / cover no-repeat url("../images/bgTab.png")
 
 @media (max-width: 576px)
+    .signing-main
+        flex-direction: column
     .background-image
-        background: top / contain no-repeat url("../images/bg.png")
-        position: absolute
-        top: 0px
-        left: 0px
+        background: top / cover no-repeat url("../images/bg.png")
         width: 100%
-        z-index: -1
+        flex: none
+        height: 96px
     .signing-block
         flex: 1
         margin-top: 72px
@@ -162,20 +161,8 @@ h1
         padding-left: 32px
         padding-right: 32px
         background-color: $background-color
-        z-index: 1
         border-radius: 24px 24px 0px 0px
         padding-top: 32px
-        height: 89vh
-    .empty-block
-        display: none
-        &:last-of-type
-            height: 44px!important
-            display: block
-        &:nth-last-of-type(2)
-            //doesn't work for sign-in html but works for sign-up html, but &-second works for both of them, don't know why
-        &-second
-            flex: 1!important
-            display: block
 
     .form
         gap: 24px

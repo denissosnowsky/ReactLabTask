@@ -8,7 +8,8 @@ html {
 
 .signing-main {
   display: flex;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #F9FAFF; }
 
 .background-image {
   flex: 1;
@@ -22,8 +23,6 @@ html {
   flex-direction: column;
   padding-left: 96px;
   padding-right: 96px;
-  background: #F9FAFF;
-  position: relative;
   left: 0px; }
 
 h1 {
@@ -177,13 +176,13 @@ h1 {
     background: left/cover no-repeat url("../images/bgTab.png"); } }
 
 @media (max-width: 576px) {
+  .signing-main {
+    flex-direction: column; }
   .background-image {
-    background: top/contain no-repeat url("../images/bg.png");
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    background: top/cover no-repeat url("../images/bg.png");
     width: 100%;
-    z-index: -1; }
+    flex: none;
+    height: 96px; }
   .signing-block {
     flex: 1;
     margin-top: 72px;
@@ -191,18 +190,8 @@ h1 {
     padding-left: 32px;
     padding-right: 32px;
     background-color: #F9FAFF;
-    z-index: 1;
     border-radius: 24px 24px 0px 0px;
-    padding-top: 32px;
-    height: 89vh; }
-  .empty-block {
-    display: none; }
-    .empty-block:last-of-type {
-      height: 44px !important;
-      display: block; }
-    .empty-block-second {
-      flex: 1 !important;
-      display: block; }
+    padding-top: 32px; }
   .form {
     gap: 24px;
     padding-top: 24px; }
@@ -243,14 +232,14 @@ h1 {
     line-height: 23px; }
 
 .signing-block-sign-in {
-  top: 25.8%; }
+  margin-top: 264px; }
 
 .footer-sign-in {
-  margin-top: 25vh; }
+  margin-top: 257px; }
 
 @media (max-width: 576px) {
   .signing-block-sign-in {
-    top: 0%; }
+    margin-top: -24px; }
   .footer-sign-in {
     flex: 1;
     display: flex;
@@ -259,14 +248,14 @@ h1 {
     margin-top: 0px; } }
 
 .signing-block-sign-up {
-  top: 16.4%; }
+  margin-top: 168px; }
 
 .footer-sign-up {
-  margin-top: 11.7vh; }
+  margin-top: 120px; }
 
 @media (max-width: 576px) {
   .signing-block-sign-up {
-    top: 0%; }
+    margin-top: -24px; }
   .footer-sign-up {
     flex: 1;
     display: flex;
@@ -275,15 +264,15 @@ h1 {
     margin-top: 0px; } }
 
 .signing-block-res-pass {
-  top: 25.8%; }
+  margin-top: 264px; }
 
 @media (max-width: 576px) {
   .signing-block-res-pass {
-    top: 0%; } }
+    margin-top: -24px; } }
 
 .signing-block-res-pass-sent {
-  top: 25.8%; }
+  margin-top: 264px; }
 
 @media (max-width: 576px) {
   .signing-block-res-pass-sent {
-    top: 0%; } }
+    margin-top: -24px; } }
