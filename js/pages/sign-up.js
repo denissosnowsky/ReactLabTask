@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
+export const signUp = `
     <main class="signing-main">
       <section class="background-image"></section>
       <aside class="signing-block signing-block-sign-up">
@@ -78,10 +63,9 @@
         <footer class="footer-sign-up">
           <div class="link-block">
             <span class="link-block__question">Already have an account?</span
-            ><u class="link-block__offer">Sign in</u>
+            ><u class="link-block__offer" onclick="onNavigate('/sign-in')">Sign in</u>
           </div>
         </footer>
       </aside>
     </main>
-  </body>
-</html>
+`;

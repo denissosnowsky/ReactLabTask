@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
+export const signIn = `
     <main class="signing-main">
       <section class="background-image"></section>
       <aside class="signing-block signing-block-sign-in">
@@ -47,15 +32,14 @@
           </button>
         </form>
         <div class="link-block forgotPassword-link">
-          <u class="link-block__offer">Forgot Password?</u>
+          <u class="link-block__offer" onclick="onNavigate('/restore-password')">Forgot Password?</u>
         </div>
         <footer class="footer-sign-in">
           <div class="link-block">
             <span class="link-block__question">Don’t have an account?</span
-            ><u class="link-block__offer">Sign up</u>
+            ><u class="link-block__offer" onclick="onNavigate('/')">Sign up</u>
           </div>
         </footer>
       </aside>
     </main>
-  </body>
-</html>
+`;
