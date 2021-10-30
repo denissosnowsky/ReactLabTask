@@ -2,7 +2,7 @@ export const restorePasswordSent = `
     <main class="signing-main">
         <section class="background-image"></section>
         <aside class="signing-block signing-block-res-pass-sent">
-            <h1 onclick="onNavigate('/sign-in')">
+            <h1 class="back-from-passRestore">
                 <span class="h1__icon"
                 ><img alt="back" src="./icons/arrow-left.svg" /></span
                 ><span>Restore Password</span>
