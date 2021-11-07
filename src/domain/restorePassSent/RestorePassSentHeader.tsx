@@ -1,4 +1,4 @@
-import { routes } from "../../application/routes/routes";
+import { routes } from "../../routes/routes";
 import HeaderWithIcon from "../../ui/HeaderWithIcon/HeaderWithIcon";
 
 const RestorePassSentHeader: React.FC = () => {

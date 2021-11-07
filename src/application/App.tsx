@@ -4,7 +4,7 @@ import RestorePass from "./pages/RestorePass/RestorePass";
 import RestorePassSent from "./pages/RestorePassSent/RestorePassSent";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
-import { routes } from "./routes/routes";
+import { routes } from "../routes/routes";
 
 function App() {
   return (

@@ -5,7 +5,7 @@ import SignInFormik from "../../../domain/signIn/SignInFormik";
 import BackGroundImage from "../../../ui/BackGroundImage/BackGroundImage";
 import Header from "../../../ui/Header/Header";
 import WindowWrapper from "../../../ui/WindowWrapper/WindowWrapper";
-import { routes } from "../../routes/routes";
+import { routes } from "../../../routes/routes";
 
 const SignIn: React.FC = () => {
   return (
