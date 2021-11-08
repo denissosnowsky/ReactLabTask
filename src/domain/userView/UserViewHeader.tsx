@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Logo from "../../ui/Logo/Logo";
-import UserBlock from "../../ui/UserBlock/UserBlock";
+import Logo from "ui/Logo/Logo";
+import UserBlock from "ui/UserBlock/UserBlock";
 
 const UserViewHeaderStyle = styled.header`
   height: 80px;

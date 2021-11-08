@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "../../ui/Button/Button";
+import Button from "ui/Button/Button";
 
 const UserViewBoardNavStyle = styled.nav`
   height: 96px;

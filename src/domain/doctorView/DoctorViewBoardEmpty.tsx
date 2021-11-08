@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SecondaryText from "../../ui/SecondaryText/SecondaryText";
+import SecondaryText from "ui/SecondaryText/SecondaryText";
 import historyImage from "./assets/medicalHistory.svg";
 
 const DoctorViewBoardEmptyWrapper = styled.div`

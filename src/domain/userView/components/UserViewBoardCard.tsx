@@ -1,8 +1,8 @@
 import timeIcon from "../assets/time.svg";
 import heartIcon from "../assets/heart.svg";
 import { AppointmentsDataAPI } from "../types/types";
-import Card from "../../../ui/Card/Card";
-import SecondaryText from "../../../ui/SecondaryText/SecondaryText";
+import Card from "ui/Card/Card";
+import SecondaryText from "ui/SecondaryText/SecondaryText";
 
 interface UserViewBoardCardPropsType {
   data: AppointmentsDataAPI;

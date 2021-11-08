@@ -1,9 +1,9 @@
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import InputForFormik from "../../ui/InputForFormik/InputForFormik";
-import messageIcon from "../../assets/message.svg";
+import InputForFormik from "ui/InputForFormik/InputForFormik";
+import messageIcon from "assets/message.svg";
 import styled from "styled-components";
-import Button from "../../ui/Button/Button";
+import Button from "ui/Button/Button";
 
 const FromStyle = styled(Form)`
   padding-top: 40px;

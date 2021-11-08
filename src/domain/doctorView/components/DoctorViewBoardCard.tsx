@@ -1,7 +1,7 @@
 import timeIcon from "../assets/time.svg";
 import boardIcon from "../assets/board.svg";
 import { PatientDataAPI } from "../types/types";
-import Card from "../../../ui/Card/Card";
+import Card from "ui/Card/Card";
 import DoctorUserStatus from "./DoctorUserStatus";
 
 interface DoctorViewBoardCardPropsType {

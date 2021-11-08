@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SecondaryText from "../../../ui/SecondaryText/SecondaryText";
+import SecondaryText from "ui/SecondaryText/SecondaryText";
 import onlineIcon from "../assets/online.svg";
 import notOnlineIcon from "../assets/notOnline.svg";
 import waitIcon from "../assets/wait.svg";

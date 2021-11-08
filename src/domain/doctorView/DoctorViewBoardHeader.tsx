@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Header from "../../ui/Header/Header";
-import SearchInput from "../../ui/SearchInput/SearchInput";
-import Selector from "../../ui/Selector/Selector";
+import Header from "ui/Header/Header";
+import SearchInput from "ui/SearchInput/SearchInput";
+import Selector from "ui/Selector/Selector";
 
 const DoctorViewBoardHeaderStyle = styled.header`
   height: 32px;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Button from "../../ui/Button/Button";
-import Header from "../../ui/Header/Header";
-import Selector from "../../ui/Selector/Selector";
+import Button from "ui/Button/Button";
+import Header from "ui/Header/Header";
+import Selector from "ui/Selector/Selector";
 import plusIcon from "./assets/plus.svg";
 
 const UserViewBoardHeaderStyle = styled.header`

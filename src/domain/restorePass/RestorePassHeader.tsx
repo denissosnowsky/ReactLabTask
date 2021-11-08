@@ -1,5 +1,5 @@
-import { routes } from "../../routes/routes";
-import HeaderWithIcon from "../../ui/HeaderWithIcon/HeaderWithIcon";
+import { routes } from "routes/routes";
+import HeaderWithIcon from "ui/HeaderWithIcon/HeaderWithIcon";
 
 const RestorePassHeader: React.FC = () => {
   return (

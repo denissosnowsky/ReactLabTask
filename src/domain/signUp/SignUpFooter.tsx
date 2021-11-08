@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Link from "../../ui/Link/Link";
-import SecondaryText from "../../ui/SecondaryText/SecondaryText";
-import { routes } from "../../routes/routes";
+import Link from "ui/Link/Link";
+import SecondaryText from "ui/SecondaryText/SecondaryText";
+import { routes } from "routes/routes";
 
 const SecondaryTextPaddingRight = styled(SecondaryText)`
   padding-right: 12px;

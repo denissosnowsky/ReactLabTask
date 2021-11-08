@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WindowWrapper from "../../ui/WindowWrapper/WindowWrapper";
+import WindowWrapper from "ui/WindowWrapper/WindowWrapper";
 
 const UserViewWindowWrapperStyle = styled(WindowWrapper)`
   background-color: #e4ebff;
