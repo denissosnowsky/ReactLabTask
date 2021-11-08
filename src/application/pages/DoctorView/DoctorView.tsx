@@ -18,8 +18,8 @@ const DoctorView: React.FC = () => {
         <DoctorViewBoardHeader />
         <DoctorViewBoardMain>
           {
-            /* emptyData.length */ data.length > 0 ? (
-              <DoctorViewBoardFilled data={data /* emptyData */} />
+            /* emptyData.length */ data.patients.length > 0 ? (
+              <DoctorViewBoardFilled data={data.patients /* emptyData */} />
             ) : (
               <DoctorViewBoardEmpty />
             )

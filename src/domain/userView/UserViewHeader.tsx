@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Logo from "../../ui/Logo/Logo";
 import UserBlock from "../../ui/UserBlock/UserBlock";
 
-const DoctorViewHeaderStyle = styled.header`
+const UserViewHeaderStyle = styled.header`
   height: 80px;
   display: flex;
   align-items: center;
@@ -14,13 +14,13 @@ const DoctorViewHeaderStyle = styled.header`
   }
 `;
 
-const DoctorViewHeader = () => {
+const UserViewHeader = () => {
   return (
-    <DoctorViewHeaderStyle>
+    <UserViewHeaderStyle>
       <Logo />
       <UserBlock />
-    </DoctorViewHeaderStyle>
+    </UserViewHeaderStyle>
   );
 };
 
-export default DoctorViewHeader;
+export default UserViewHeader;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import MainText from "../../../ui/MainText/MainText";
-import SecondaryText from "../../../ui/SecondaryText/SecondaryText";
-import UserLogo from "../../../ui/UserLogo/UserLogo";
+import MainText from "../MainText/MainText";
+import SecondaryText from "../SecondaryText/SecondaryText";
+import UserLogo from "../UserLogo/UserLogo";
 
 const UserBlockStyle = styled.div`
-  height: 100%;
+  height: 80px;
   width: fit-content;
   display: flex;
   align-items: center;

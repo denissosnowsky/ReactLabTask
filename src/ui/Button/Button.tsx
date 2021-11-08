@@ -48,6 +48,14 @@ const IconSpan = styled.span`
   align-items: center;
 `;
 
+interface ButtonTextProps {
+  fs?: Property.FontSize;
+}
+
+const TextSpan = styled.span<ButtonTextProps>`
+  font-size: ${(props) => props.fs && props.fs};
+`;
+
 interface ButtonPropsType {
   variant?: "primary" | "light";
   style?: React.CSSProperties | undefined;
@@ -61,7 +69,9 @@ interface ButtonPropsType {
   mb?: Property.MarginBottom;
   mr?: Property.MarginRight;
   ml?: Property.MarginLeft;
+  fs?: Property.FontSize;
   className?: string | undefined;
+  signSide?: "right" | "left";
 }
 
 const Button: React.FC<ButtonPropsType> = ({
@@ -77,7 +87,9 @@ const Button: React.FC<ButtonPropsType> = ({
   mb,
   mr,
   ml,
-  className
+  fs,
+  className,
+  signSide,
 }) => {
   return (
     <ButtonStyle
@@ -94,11 +106,24 @@ const Button: React.FC<ButtonPropsType> = ({
       mr={mr && mr}
       className={className && className}
     >
-      <span>{text}</span>
       {icon &&
+        signSide &&
+        signSide === "left" &&
         (icon === "default" ? (
           <IconSpan>
-            <img alt="button" src={arrow}/>
+            <img alt="button" src={arrow} />
+          </IconSpan>
+        ) : (
+          <IconSpan>
+            <img alt="button" src={icon} />
+          </IconSpan>
+        ))}
+      <TextSpan fs={fs && fs}>{text}</TextSpan>
+      {icon &&
+        !(signSide === "left") &&
+        (icon === "default" ? (
+          <IconSpan>
+            <img alt="button" src={arrow} />
           </IconSpan>
         ) : (
           <IconSpan>
